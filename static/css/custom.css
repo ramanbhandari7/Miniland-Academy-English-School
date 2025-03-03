@@ -1,0 +1,167 @@
+/* Custom styles on top of Bootstrap */
+:root {
+    --school-primary: #003366;    /* Navy blue */
+    --school-secondary: #cc9900;  /* Dark yellow for accents */
+    --school-white: #ffffff;      /* White */
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: var(--school-primary) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .nav-link {
+    color: var(--school-white) !important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.navbar-brand .brand-text {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.nav-link:hover {
+    color: rgba(255,255,255,0.8) !important;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: var(--school-white);
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.hero-section {
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.btn-primary {
+    background-color: var(--school-primary);
+    border-color: var(--school-primary);
+}
+
+.btn-primary:hover {
+    background-color: #002347;
+    border-color: #002347;
+}
+
+.text-primary {
+    color: var(--school-primary) !important;
+}
+
+.bg-primary {
+    background-color: var(--school-primary) !important;
+}
+
+/* Card styles */
+.card {
+    background-color: var(--school-white);
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex: 1;
+}
+
+/* Typography styles */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: var(--school-primary);
+}
+
+.lead {
+    font-weight: 400;
+}
+
+/* Image handling */
+.card-img-wrapper {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 60vh;
+    }
+
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+}
+
+/* Accent elements with secondary color */
+.card-body i.fas,
+.card-body i.fab {
+    color: var(--school-secondary);
+}
+
+/* Footer styling */
+footer {
+    color: white;
+}
+
+footer a.text-light {
+    color: rgba(255, 255, 255, 0.9) !important;
+    text-decoration: none;
+}
+
+footer a.text-light:hover {
+    color: white !important;
+    text-decoration: underline;
+}
+
+footer .social-icons a {
+    font-size: 1.5rem;
+    transition: transform 0.3s;
+}
+
+footer .social-icons a:hover {
+    transform: scale(1.2);
+}

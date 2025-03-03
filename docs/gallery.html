@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container py-5">
+    <h1 class="text-center mb-5">Photo Gallery</h1>
+
+    <div class="row" id="lightgallery">
+        <div class="col-md-4 col-sm-6 mb-4">
+            <a href="{{ url_for('static', filename='assets/WhatsApp Image 2025-02-24 at 8.33.02 AM.jpeg') }}" class="gallery-item" data-lg-size="1600-1067">
+                <div class="card h-100">
+                    <img src="{{ url_for('static', filename='assets/WhatsApp Image 2025-02-24 at 8.33.02 AM.jpeg') }}" class="card-img-top" alt="School Building">
+                    <div class="card-body">
+                        <p class="card-text text-center">School Building</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+            <a href="{{ url_for('static', filename='assets/WhatsApp Image 2025-02-24 at 6.32.40 AM.jpeg') }}" class="gallery-item" data-lg-size="1600-1067">
+                <div class="card h-100">
+                    <img src="{{ url_for('static', filename='assets/WhatsApp Image 2025-02-24 at 6.32.40 AM.jpeg') }}" class="card-img-top" alt="School Activities">
+                    <div class="card-body">
+                        <p class="card-text text-center">School Activities</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+            <a href="{{ url_for('static', filename='assets/WhatsApp Image 2025-02-24 at 9.30.08 AM.jpeg') }}" class="gallery-item" data-lg-size="1600-1067">
+                <div class="card h-100">
+                    <img src="{{ url_for('static', filename='assets/WhatsApp Image 2025-02-24 at 9.30.08 AM.jpeg') }}" class="card-img-top" alt="School Facilities">
+                    <div class="card-body">
+                        <p class="card-text text-center">School Facilities</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-12">
+            <div class="card bg-light">
+                <div class="card-body text-center">
+                    <h3>Life at Miniland Academy</h3>
+                    <p class="lead">Explore our vibrant school community through these captured moments</p>
+                    <div class="mt-4">
+                        <a href="{{ url_for('contact') }}" class="btn btn-primary">Schedule a Visit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

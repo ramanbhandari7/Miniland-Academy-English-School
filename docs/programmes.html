@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container py-5">
+    <h1 class="text-center mb-5">Our Academic Programmes</h1>
+
+    <!-- Kindergarten -->
+    <div class="row mb-5 align-items-center">
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='assets/WhatsApp Image 2025-02-24 at 6.32.40 AM.jpeg') }}" alt="Kindergarten" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6">
+            <h2>Kindergarten</h2>
+            <p class="lead">Early childhood education laying strong foundations</p>
+            <ul class="list-unstyled">
+                <li><i class="fas fa-check-circle text-primary me-2"></i> Play-based learning</li>
+                <li><i class="fas fa-check-circle text-primary me-2"></i> Basic literacy and numeracy</li>
+                <li><i class="fas fa-check-circle text-primary me-2"></i> Social skills development</li>
+                <li><i class="fas fa-check-circle text-primary me-2"></i> Creative activities</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Primary Level -->
+    <div class="row mb-5 align-items-center flex-md-row-reverse">
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='assets/WhatsApp Image 2025-02-24 at 9.30.08 AM.jpeg') }}" alt="Primary Level" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6">
+            <h2>Primary Level (Grades 1-5)</h2>
+            <p class="lead">Building strong foundations for lifelong learning</p>
+            <ul class="list-unstyled">
+                <li><i class="fas fa-check-circle text-primary me-2"></i> Core subjects: English, Mathematics, Science</li>
+                <li><i class="fas fa-check-circle text-primary me-2"></i> Nepali language and cultural studies</li>
+                <li><i class="fas fa-check-circle text-primary me-2"></i> Creative arts and physical education</li>
+                <li><i class="fas fa-check-circle text-primary me-2"></i> Interactive learning methods</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Middle School -->
+    <div class="row mb-5 align-items-center">
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='assets/WhatsApp Image 2025-02-24 at 8.33.02 AM.jpeg') }}" alt="Middle School" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6">
+            <h2>Middle School (Grades 6-9)</h2>
+            <p class="lead">Preparing students for academic excellence</p>
+            <ul class="list-unstyled">
+                <li><i class="fas fa-check-circle text-primary me-2"></i> Advanced core subjects</li>
+                <li><i class="fas fa-check-circle text-primary me-2"></i> Computer science and technology</li>
+                <li><i class="fas fa-check-circle text-primary me-2"></i> Science and mathematics focus</li>
+                <li><i class="fas fa-check-circle text-primary me-2"></i> Leadership development</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- High School -->
+    <div class="row mb-5 align-items-center">
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='assets/high-school-image.jpg') }}" alt="High School" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6">
+            <h2>High School (Grades 10-12)</h2>
+            <p class="lead">Preparing students for college and beyond</p>
+            <ul class="list-unstyled">
+                <li><i class="fas fa-check-circle text-primary me-2"></i> Advanced courses in core subjects</li>
+                <li><i class="fas fa-check-circle text-primary me-2"></i> College preparation and guidance</li>
+                <li><i class="fas fa-check-circle text-primary me-2"></i> Extracurricular activities and leadership</li>
+                <li><i class="fas fa-check-circle text-primary me-2"></i> Community service and social responsibility</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Special Programs -->
+    <div class="row mt-5">
+        <div class="col-12 text-center">
+            <h2 class="mb-4">Special Programs</h2>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-palette fa-3x text-primary mb-3"></i>
+                    <h3>Arts & Culture</h3>
+                    <p>Exploring creativity through music, dance, and visual arts</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-flask fa-3x text-primary mb-3"></i>
+                    <h3>STEM Activities</h3>
+                    <p>Hands-on experience in science and technology</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-futbol fa-3x text-primary mb-3"></i>
+                    <h3>Sports Excellence</h3>
+                    <p>Comprehensive physical education and sports training</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

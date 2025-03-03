@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row">
+        <div class="col-lg-6">
+            <h1 class="mb-4">Contact Us</h1>
+            <p class="lead">We'd love to hear from you. Please fill out this form to get in touch.</p>
+            
+            <form method="POST" class="contact-form needs-validation" novalidate>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                    <div class="invalid-feedback">Please provide your name.</div>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                    <div class="invalid-feedback">Please provide a valid email address.</div>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                    <div class="invalid-feedback">Please write your message.</div>
+                </div>
+                
+                <!-- Google reCAPTCHA -->
+                <div class="mb-3">
+                    <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+        
+        <div class="col-lg-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3>School Address</h3>
+                    <p><i class="fas fa-map-marker-alt text-primary me-2"></i> Kerabari 7 Dangi, Morang, Nepal</p>
+                    
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-phone text-primary me-2"></i> Phone: +977-XXX-XXXXXXX</p>
+                    <p><i class="fas fa-envelope text-primary me-2"></i> Email: info@minilandacademy.edu.np</p>
+                    
+                    <h3>Office Hours</h3>
+                    <p><i class="fas fa-clock text-primary me-2"></i> Sunday - Friday: 8:00 AM - 4:00 PM</p>
+                    <p><i class="fas fa-ban text-primary me-2"></i> Closed on Saturdays and Public Holidays</p>
+                </div>
+            </div>
+            
+            <!-- Google Maps Embed -->
+            <div class="card">
+                <div class="card-body">
+                    <h3>Find Us on the Map</h3>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.412169255484!2d87.2755285150617!3d26.73251278319805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef415e6c86f29b%3A0x4b5c4a9d8b73f3b1!2sKerabari%2C%20Morang%2C%20Nepal!5e0!3m2!1sen!2snp!4v1632519408321!5m2!1sen!2snp" 
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+            
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links mt-3">
+                        <a href="#" class="btn btn-outline-primary me-2">
+                            <i class="fab fa-facebook"></i> Facebook
+                        </a>
+                        <a href="#" class="btn btn-outline-primary me-2">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a>
+                        <a href="#" class="btn btn-outline-primary">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Google reCAPTCHA Script -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+{% endblock %}
